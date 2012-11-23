@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Nov 23 15:19:01 EST 2012
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=aa.jar
+manifest.mergeall=true
+manifest.mainclass=NoiseKiller
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="FatJar aa.jar (experimental)" default="main" basedir=".">
+    <!-- this file was created by Fat-Jar Eclipse Plug-in -->
+    <!-- the ANT-Export is in a very early stage, so this -->
+    <!-- is only experimental, ANT 1.6 or above is        -->
+    <!-- required, feedback is always welcome:            -->
+    <!--       http://sourceforge.net/projects/fjep       -->
+    <!-- uncomment the following lines if using ANT outside Eclipse -->
+    <!--
+        <property name="fjepPath" value="reference:file:plugins/net.sf.fjep.fatjar_0.0.31.jarfatjar.jar"/>
+        <taskdef name="fatjar.build" classname="net.sf.fjep.anttask.FJBuildTask" classpath="${fjepPath}"/>
+        <typedef name="fatjar.manifest" classname="net.sf.fjep.anttask.FJManifestType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.exclude" classname="net.sf.fjep.anttask.FJExcludeType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.jarsource" classname="net.sf.fjep.anttask.FJJarSourceType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.filesource" classname="net.sf.fjep.anttask.FJFileSourceType" classpath="${fjepPath}"/>
+    -->
+    <!-- uncomment the above lines to use ANT outside of Eclipse -->
+    <target name="main">
+        <fatjar.build output="aa.jar">
+            <fatjar.manifest mainclass="NoiseKiller"/>
+            <fatjar.filesource path="C:\Users\ASUS\workspaceN\NoiseKiller\bin" relpath=""/>
+            <fatjar.jarsource file="C:\qtjambi-win32-lgpl-4.5.2_01\qtjambi-4.5.2_01.jar" relpath=""/>
+            <fatjar.jarsource file="C:\qtjambi-win32-lgpl-4.5.2_01\qtjambi-win32-msvc2005-4.5.2_01.jar" relpath=""/>
+            <fatjar.filesource path="C:\Users\ASUS\workspaceN\NoiseKiller\mp3\" relpath=""/>
+        </fatjar.build>
+    </target>
+</project>
